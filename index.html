@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ui-Kit</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="light-mode">
+    <div class="container">
+      <div class="big-img">
+        <img src="/media/bear.jpg" alt="bear" />
+      </div>
+     
+      <div class="form-container">
+        <h2 class="title">Create account</h2>
+        <p class="subtitle">Or registr using email & password</p>
+        <img src="/media/facebook.svg" alt="facebook" />
+        <img src="/media/twitter.svg" alt="twitter" />
+        <img src="/media/google.svg" alt="google" />
+      </div>
+    
+    <form class="form">
+      <div class="group">
+        <label for="name" class="label">Full name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="input"
+          placeholder="John rambo"
+        />
+        <label for="email" class="label">Email address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="input"
+          placeholder="hello@hey.com"
+        />
+        <label for="password" class="label">Create password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="input"
+          placeholder="••••••••••••"
+        />
+        <label for="confirm-password" class="label">Confirm password</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          class="input"
+          placeholder="••••••••••••"
+        />
+      </div>
+      <div class="footer">
+        <p class="form__text">
+          <img src="./media/checkbox.svg" alt="checkbox" /> I agree to the<a
+            href="#"
+            >terms</a
+          >
+          & <a href="#">privacy policy</a>
+        </p>
+        <button type="submit" class="form__button">Register</button>
+      </div>
+    </form>
+    <div class="theme-toggle">
+        <button class="mode">Dark Mode</button>
+      </div>
+</div>
+    <script src="/script.js"></script>
+  </body>
+</html>
