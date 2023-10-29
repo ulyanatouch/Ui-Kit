@@ -5,39 +5,29 @@
 }
 
 body.light-mode {
-    background-color: #fcfcfc;
-    color: #333333;
-  }
-  
-  /* Стили для темной темы */
-  body.dark-mode {
-    background-color: #333333;
-    color: #ffffff;
-  }
-  
-  .form.dark-mode {
-    background-color: #000000;
-    color: #fff;
-  }
+  border-radius: 10px;
+  background: var(--black-02, #2d2f30);
+}
+
+.form.dark-mode {
+  background-color: #000000;
+  color: #fff;
+}
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 20px; /*зазор между элементами  */
-    justify-content: center;
-    height: 100vh;
+  display: inline-flex;
+  height: 1024px;
+  padding-right: 0px;
+  align-items: center;
+  gap: 137px;
 }
 
-.form-container {
 
-}
 
 .big-img {
   max-width: 100%;
   /* padding: 40px; */
 }
-
 
 .mode {
   display: block;
@@ -54,8 +44,8 @@ body.light-mode {
 }
 
 .theme-toggle {
-    margin-right: 20px;
-  }
+  margin-right: 20px;
+}
 
 .title {
   font-size: 24px;
@@ -99,9 +89,9 @@ input::placeholder {
 .form_button {
 }
 
-/* Для мобильных устройств вы можете изменить порядок столбцов */
+
 @media (max-width: 768px) {
-    .container {
-      grid-template-columns: 1fr;
-    }
+  .container {
+    grid-template-columns: 1fr;
   }
+}
