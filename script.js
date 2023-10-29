@@ -21,14 +21,10 @@ mode.addEventListener("click", (e) => {
   }
 });
 
-document.getElementById("name").value = localStorage.getItem("name") || "";
-document.getElementById("email").value = localStorage.getItem("email") || "";
-document.getElementById("password").value =
-  localStorage.getItem("password") || "";
-document.getElementById("confirm-password").value =
-  localStorage.getItem("confirm-password") || "";
-
+// Этот код правильно сохраняет данные из полей ввода в localStorage и автоматически обновляет их при каждом вводе.
+// Таким образом, введенные данные будут сохраняться между сеансами и восстанавливаться при последующих посещениях страницы.
 document.querySelectorAll("input").forEach((input) => {
+  const savedValue = localStorage.getItem(input.id);
   input.addEventListener("input", () => {
     localStorage.setItem(input.id, input.value);
   });
