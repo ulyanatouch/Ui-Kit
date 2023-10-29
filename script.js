@@ -21,8 +21,6 @@ mode.addEventListener("click", (e) => {
   }
 });
 
-// Этот код правильно сохраняет данные из полей ввода в localStorage и автоматически обновляет их при каждом вводе.
-// Таким образом, введенные данные будут сохраняться между сеансами и восстанавливаться при последующих посещениях страницы.
 document.querySelectorAll("input").forEach((input) => {
   const savedValue = localStorage.getItem(input.id);
   input.addEventListener("input", () => {
